@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- ImageView for the Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/moon"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".LandingActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vinveli"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select a Space Mission"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupMissions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButtonMission1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aryabhata (1975)"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                />
+
+            <RadioButton
+                android:id="@+id/radioButtonMission2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mangalyaan (Mars Orbiter Mission) (2013)"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonMission3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chandrayaan-1 (2008)"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonMission4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chandrayaan-3"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonMission5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RISAT Satellites"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonMission6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aditya-L1 (Upcoming)"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonMission7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GSAT Satellites"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buttonDownloadImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Download Image" />
+
+        <Button
+            android:id="@+id/buttonMissionSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Mission Summary" />
+    </LinearLayout>
+</FrameLayout>
